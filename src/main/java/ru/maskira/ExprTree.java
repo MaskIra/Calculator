@@ -5,10 +5,10 @@ import ru.maskira.superclasses.Operation;
 
 import java.util.regex.Pattern;
 
-public class Tree<T extends Number> {
+public class ExprTree<T extends Number> {
     private Node root;
 
-    public Tree() {
+    public ExprTree() {
         this.root = null;
     }
 

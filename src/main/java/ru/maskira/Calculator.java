@@ -5,20 +5,20 @@ import ru.maskira.superclasses.TreeCalculator;
 import ru.maskira.treeCalculators.SimpleTreeCalculator;
 
 public class Calculator {
-    private Tree tree = new Tree();
+    private ExprTree exprTree = new ExprTree();
     private String expression;
     private TreeCalculator calcTree;
 
     public Calculator(String expression) {
         this.expression = expression;
-        tree.createTree(expression);
+        exprTree.createTree(expression);
         calcTree = new SimpleTreeCalculator();
     }
 
     public Number getResult() {
         if (!checkExpr())
             return null;
-        return calcTree.getResult(tree);
+        return calcTree.getResult(exprTree);
     }
 
     public boolean checkExpr() {

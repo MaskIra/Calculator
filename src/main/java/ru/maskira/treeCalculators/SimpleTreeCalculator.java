@@ -1,15 +1,15 @@
 package ru.maskira.treeCalculators;
 
 import ru.maskira.Node;
-import ru.maskira.Tree;
+import ru.maskira.ExprTree;
 import ru.maskira.superclasses.Operation;
 import ru.maskira.superclasses.TreeCalculator;
 
 public class SimpleTreeCalculator implements TreeCalculator {
     @Override
-    public Number getResult(Tree tree) {
+    public Number getResult(ExprTree exprTree) {
 
-        Node curNode = tree.getRoot();
+        Node curNode = exprTree.getRoot();
         while (!curNode.isLeaf()) {
             calcTree(curNode);
         }

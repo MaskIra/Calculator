@@ -1,7 +1,7 @@
 package ru.maskira.superclasses;
 
-import ru.maskira.Tree;
+import ru.maskira.ExprTree;
 
 public interface TreeCalculator {
-    public Number getResult(Tree tree);
+    public Number getResult(ExprTree exprTree);
 }
